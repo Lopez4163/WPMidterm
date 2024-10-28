@@ -4,12 +4,15 @@
     <link rel="stylesheet" href="styles.css">
     <title>Nicholas Latin Cuisine Menu</title>
     <style>
-        /* USING INTERNAL CSS */
+        /* INTERNAL STYLING USING ID AND CLASS SELECTOR */
+
+        /* ADJUSTING STYLE OF CAPTION (TITLE) OF MY TABLE */
         table caption {
             font-size: 1.5em;
             font-weight: bold;
             margin-bottom: 10px;
         }
+        
         #ingredients-box {
             background-image: url('./assets/board.jpg'); 
             background-size: cover;
@@ -18,28 +21,30 @@
 </head>
 <body>
     <!-- NAVRBAR CODE TO KEEP IT CONSISTENT -->
-    <div class="navbar-container navbar-font">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Nicholas Latin Fusion Logo"></a>
-            </div>
-            <div class="nav-links">
-                <a href="menu.html" class="hover-effect">Menu</a>
-                <a href="creative.html" class="hover-effect">Cultural Food</a>
-                <!-- CONTACT BUTTON WILL SEND YOU TO BOTTOM OF PAGE FOR CONTACT (MAILTO) SECTION -->
-                <a href="#contact" class="hover-effect">Contact</a>
-            </div>
-        </div>
+    <div class="navbar-container navbar-font" id="top">
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">
+                    <img src="assets/logo5.png" class="hover-effect" style="height: 13rem; width: 13rem;" alt="Nicholas Latin Fusion Logo">
+                </a>
+            </li>
+            <li><a href="menu.html" class="hover-effect">Menu</a></li>
+            <li><a href="creative.html" class="hover-effect">Cultural Food</a></li>
+            <!-- CONTACT BUTTON WILL SEND YOU TO BOTTOM OF PAGE FOR CONTACT (MAILTO) SECTION -->
+            <li><a href="index.html#contact" class="hover-effect">Contact</a></li>
+        </ul>
     </div>
     <!-- INGREDIENTS SECTION  -->
-    <div class="full-box" style="height: 20rem; background-color:#2c2c2c;" id="ingredients-box">
-        <h1>Enjoy Our Fresh Ingredients</h1>
-        <p>At Nicholas Latin Fusion, we use only the freshest ingredients in our dishes. Our chefs handpick the best produce, meats, and spices to ensure that every dish is bursting with flavor. We take pride in our food and we know you'll taste the difference.</p>
+    <div class="full-box" style="height: 20rem; border: none;" id="ingredients-box">
+        <h1 style="font-family: 'Lobster', cursive;">Enjoy Our Fresh Ingredients</h1>
+        <p style="margin-bottom: 10px;">At Nicholas Latin Fusion, we use only the freshest ingredients in our dishes. Our chefs handpick the best produce, meats, and spices to ensure that every dish is bursting with flavor. We take pride in our food and we know you'll taste the difference.</p>
     </div>
     <!-- MENU SECTION -->
      <div class="menu-bg">
+        <!-- BORDER: SET WIDTH OF BORDER    CELLSPACING: SPACE BETWEEN CELLS    CELLPADDING: PADDING BETWEEN CELLS -->
+        <!-- ADULT MENU -->
         <table border="1" cellspacing="5" cellpadding="10">
-
+            <!-- USING ID SELECTOR TO STYLE THIS CAPTION AND USING STRONG TO MAKE IT BOLD  -->
             <caption id="table-title"><strong>Authentic Colombian and Peruvian Dishes</strong></caption>
 
             <tr>
@@ -49,53 +54,132 @@
             </tr>
             
             <tr>
-                <td><strong>Empanadas</strong></td>
+                <td><strong class="dish-name">Empanadas</strong></td>
                 <td>Handmade pastries with choice of beef, chicken, cheese, or plantain filling</td>
-                <td>$3.00</td>
+                <td class="dish-price">$3.00</td>
             </tr>
             
             <tr>
-                <td><strong>Arepas</strong></td>
+                <td><strong class="dish-name">Arepas</strong></td>
                 <td>Grilled corn cakes, soft on the inside, crispy on the outside</td>
-                <td>$5.00</td>
+                <td class="dish-price">$5.00</td>
             </tr>
             
             <tr>
-                <td><strong>Bandeja Paisa</strong></td>
+                <td><strong class="dish-name">Bandeja Paisa</strong></td>
                 <td>Colombian sausage, beef, rice, red beans, chicharrón (pork rind), arepa, plantain, avocado slice, and topped with a fried egg</td>
-                <td>$15.00</td>
+                <td class="dish-price">$15.00</td>
             </tr>
     
             <tr>
-                <td><strong>Pollo a la Brasa</strong></td>
+                <td><strong class="dish-name">Pollo a la Brasa</strong></td>
                 <td>Rotisserie chicken marinated in garlic, spices, and herbs, served with sides</td>
-                <td>$12.00</td>
+                <td class="dish-price">$12.00</td>
             </tr>
     
             <tr>
-                <td><strong>Ceviche</strong></td>
+                <td><strong class="dish-name">Ceviche</strong></td>
                 <td>Fresh fish marinated in lime juice, mixed with red onion, cilantro, and chili pepper</td>
-                <td>$10.00</td>
+                <td class="dish-price">$10.00</td>
             </tr>
             
             <tr>
-                <td><strong>Lomito Saltado</strong></td>
+                <td><strong class="dish-name">Lomito Saltado</strong></td>
                 <td>Stir-fried beef with tomatoes, onions, and French fries, served with rice</td>
-                <td>$14.00</td>
+                <td class="dish-price">$14.00</td>
             </tr>
     
             <tr>
-                <td><strong>Tacu Tacu</strong></td>
+                <td><strong class="dish-name">Tacu Tacu</strong></td>
                 <td>Fried rice and bean patty, typically topped with steak, fried egg, or seafood</td>
-                <td>$13.00</td>
+                <td class="dish-price">$13.00</td>
             </tr>
     
             <tr>
-                <td><strong>Peruvian Cuyi</strong></td>
+                <td><strong class="dish-name">Peruvian Cuyi</strong></td>
                 <td>Traditional dish of roasted guinea pig with Andean herbs and spices</td>
-                <td>$18.00</td>
+                <td class="dish-price">$18.00</td>
             </tr>
         </table>
      </div>
+     <div class="full-box" style="height: 20rem; border: none;" id="ingredients-box">
+        <h1 style="font-family: 'Lobster', cursive;">Bring Your Kids!</h1>
+        <p style="margin-bottom: 10px;">
+            Bring your kids! We have a huge selection for the little ones to try, and our restaurant is equipped with highchairs for their comfort.
+        </p>
+    </div>
+    <div class="menu-bg">
+        <!-- BORDER: SET WIDTH OF BORDER    CELLSPACING: SPACE BETWEEN CELLS    CELLPADDING: PADDING BETWEEN CELLS -->
+        <!-- ADULT MENU -->
+        <table border="1" cellspacing="5" cellpadding="10">
+            <!-- USING ID SELECTOR TO STYLE THIS CAPTION AND USING STRONG TO MAKE IT BOLD -->
+            <caption id="table-title"><strong>Kids Menu</strong></caption>
+        
+            <tr>
+                <th>Dish</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            
+            <tr>
+                <td><strong class="dish-name">Mini Empanadas</strong></td>
+                <td>Little pastries stuffed with beef or cheese, perfect for little hands!</td>
+                <td class="dish-price">$2.50</td>
+            </tr>
+            
+            <tr>
+                <td><strong class="dish-name">Arepa Bites</strong></td>
+                <td>Small corn cakes that are soft and yummy, topped with cheese or avocado.</td>
+                <td class="dish-price">$4.00</td>
+            </tr>
+            
+            <tr>
+                <td><strong class="dish-name">Chicken Nuggets</strong></td>
+                <td>Crispy chicken pieces served with your choice of dipping sauce.</td>
+                <td class="dish-price">$5.00</td>
+            </tr>
+        
+            <tr>
+                <td><strong class="dish-name">Ceviche Mixto</strong></td>
+                <td>Fresh fish and shrimp with lime, served with crunchy tortilla chips.</td>
+                <td class="dish-price">$6.00</td>
+            </tr>
+        
+            <tr>
+                <td><strong class="dish-name">Fruit Salad</strong></td>
+                <td>A mix of fresh fruits like mango, pineapple, and bananas.</td>
+                <td class="dish-price">$3.00</td>
+            </tr>
+        
+            <tr>
+                <td><strong class="dish-name">Pollo a la Brasa Sliders</strong></td>
+                <td>Mini sandwiches with tender, flavorful rotisserie chicken.</td>
+                <td class="dish-price">$6.50</td>
+            </tr>
+            
+            <tr>
+                <td><strong class="dish-name">Pasta with Butter</strong></td>
+                <td>Simple pasta tossed in butter, perfect for picky eaters!</td>
+                <td class="dish-price">$4.50</td>
+            </tr>
+        
+            <tr>
+                <td><strong class="dish-name">Choclo con Queso</strong></td>
+                <td>Sweet corn on the cob topped with melted cheese.</td>
+                <td class="dish-price">$3.50</td>
+            </tr>
+            
+            <tr>
+                <td><strong class="dish-name">Alfajores</strong></td>
+                <td>Sweet cookies filled with caramel and dusted with powdered sugar.</td>
+                <td class="dish-price">$2.00</td>
+            </tr>
+        </table>
+        
+     </div>
+    <!-- BACK TO TOP -->
+    <div class="full-box hover-effect" style="height: 2rem; font-size: 2rem; border: none;">
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </div>
 </body>
 </html>

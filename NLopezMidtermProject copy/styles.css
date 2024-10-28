@@ -1,4 +1,9 @@
-/* RESETS CSS GLOBALLY  TO REMOVE DEFAULT SPACES*/
+/* RESETS CSS GLOBALLY TO REMOVE DEFAULT SPACES */
+/* I USE REM FOR SIZING, IT STANDS FOR ROOT EM AND IS MORE EFFICIENT FOR SIZING IN CERTAIN CASES  */
+/* I USE FLEXBOX TO PROVIDE A BETTER VISUAL LOOK FOR THE NAVIGATION LINKS */
+/* I USE A HOVER EFFECT FOR ALL ANCHOR TAGS */
+
+/* THIS AFFECTS ALL ELEMENTS STYLE-WISE */
 * {
     margin: 0;
     padding: 0;
@@ -7,53 +12,46 @@
 }
 
 body, .navbar-container {
-    background-color: #1B1B1B
-    ;
+    background-color: #1B1B1B;
+    overflow-x: hidden;
+
 }
 
 /* HOVER EFFECT FOR ALL ANCHOR TAGS */
 .hover-effect {
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease; 
-  }
+}
   
-  .hover-effect:hover {
+.hover-effect:hover {
     color: #ff6609; 
     transform: scale(1.1); 
-  }
+}
   
-
 /* MAIN CONTAINER */
-/* I USE REM FOR SIZING, IT STANDS FOR ROOT EM AND IS MORE EFFICIENT FOR SIZING IN CERTAIN CASES  */
 .navbar-container {
-    padding: 50px;
+    padding: 5px;
+    
 }
 
-/* IM USING FLEX BOX HERE TO LAYOUT THE NAVBAR IN A ROW AND APPLY SPACE BETWEEN ELEMENTS  */
-.navbar { 
-    display: flex;
-    justify-content: space-between;
-    margin-left: 4rem;
-}
-/* IM USING FLEX BOX TO P[ROVIDE SPACE BETWEEN THE LINKS FOR A BETTER VISUAL LOOK */
+/* IM USING FLEX BOX TO PROVIDE SPACE AROUND THE LINKS FOR A BETTER VISUAL LOOK */
 .nav-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 20rem;
-    margin-right: 10rem;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
 }
 /* FONT STYLIGN FOR THE PAGE */
 .navbar-font {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Targeting links within .nav-links */
 .nav-links a {
-    color: white;           /* Set link color to white */
-    text-decoration: none;  /* Remove underline */
-    padding: 10px 15px;    /* Add some padding for spacing */
+    color: white;          
+    text-decoration: none;  
 }
 
 /* HEADER STYLING */
@@ -61,11 +59,12 @@ body, .navbar-container {
     background-image: url('./assets/latin-fusion-banner.jpg'); 
     background-size: cover; 
     background-position: center; 
-    height: 400px; 
+    height: 350px; 
     display: flex;
     justify-content: center; 
     align-items: center; 
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); 
 }
 
@@ -85,8 +84,9 @@ body, .navbar-container {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: 1.5rem;
-    height: 35rem;
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 40rem;
     width: 50%;
     padding: 4rem;
     border: 1px solid orange;
@@ -96,15 +96,17 @@ body, .navbar-container {
 .about-box-2 {
     position: relative; 
     width: 50%;
-    height: 35rem;
-    /* OVERFLOW MAKES SURE THAT THE IMAGE DOESNT EXCEED THE DIV ELEMENT   */
+    height: 40rem;
+    /* OVERFLOW MAKES SURE THAT THE IMAGE DOESNT EXCEED THE DIV ELEMENT  */
     overflow: hidden; 
+    border: 1px solid orange;
+
 }
 
 .about-box-2 img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the div without distortion */
+    object-fit: cover;
 }
 
 /* THIS OVERLAY IS PLACED OVER THE DIV ELEMENT THAT WILL FEATURE A BUTTON ON HOVER */
@@ -151,7 +153,7 @@ body, .navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35rem;
+    height: 40rem;
     width: 50%;
 }
 
@@ -162,7 +164,8 @@ body, .navbar-container {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 30rem;
     width: 100%;
     padding: 4rem;
@@ -174,7 +177,7 @@ body, .navbar-container {
 }
 
 .full-box p {
-    width: 60%;          
+    text-align: center;
     margin: 0 auto;        
     line-height: 1.6;      
 }
@@ -193,6 +196,19 @@ body, .navbar-container {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); 
 }
 
+.menu-bg-kids {
+    background-image: url('./assets/kids-bg.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 50rem; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 2rem;
+    color: white; 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); 
+}
+
 .menu-bg table {
     margin: 15rem;
     
@@ -200,8 +216,28 @@ body, .navbar-container {
 
 #table-title {
     margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+    
+}
+
+table caption strong {
+    color: red;
 }
 
 table td {
     padding: 4px;
+    color: yellow;
+}
+
+table th {
+    color: #FF5733;
+}
+
+.dish-name {
+    color: rgb(1, 164, 252);
+}
+
+.dish-price {
+    font-weight: bolder;
+    color: rgb(46, 172, 46);
 }

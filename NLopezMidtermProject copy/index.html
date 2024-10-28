@@ -1,9 +1,12 @@
+<!-- Nicholas Lopez 10/28/2024 -->
+ <!-- NLOPEZMIDTERMPROJECT -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Nicholas Latin Fusion</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* INTERNAL STYLING USING ID AND CLASS SELECTOR */
         #back-to-top {
             height: 1rem;
             margin: 0;
@@ -20,35 +23,34 @@
 <body>  
     <!-- NAVBAR CONTAINING LOGO AND LINKS -->
     <div class="navbar-container navbar-font" id="top">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Nicholas Latin Fusion Logo"></a>
-            </div>
-            <div class="nav-links">
-                <a href="menu.html" class="hover-effect">Menu</a>
-                <a href="creative.html" class="hover-effect">Cultural Food</a>
-                <!-- CONTACT BUTTON WILL SEND YOU TO BOTTOM OF PAGE FOR CONTACT (MAILTO) SECTION -->
-                <a href="#contact" class="hover-effect">Contact</a>
-            </div>
-        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">
+                    <img src="assets/logo5.png" class="hover-effect" style="height: 13rem; width: 13rem;" alt="Nicholas Latin Fusion Logo">
+                </a>
+            </li>
+            <li><a href="menu.html" class="hover-effect">Menu</a></li>
+            <li><a href="creative.html" class="hover-effect">Cultural Food</a></li>
+            <!-- CONTACT BUTTON WILL SEND YOU TO BOTTOM OF PAGE FOR CONTACT (MAILTO) SECTION -->
+            <li><a href="index.html#contact" class="hover-effect">Contact</a></li>
+        </ul>
     </div>
     <!-- HEADER WITH IMAGE OVERLAY -->
     <div class="banner-header">
-        <h1>Taste Colombia And Peru!</h1>
+        <h1>Flavors of Cali and Jaen!</h1>
     </div>
     <!-- ABOUT SECTION -->
      <!-- WILL BE BROKEN UP INTO TWO SEPERATE DIVS AND USE FLEX BOX TO MAKE THEM HAVE A HORIZONTAL FLOW -->
     <div class="box-container about-us-text">
         <div class="box">
             <h2>About Us</h2>
-            <p>At Nicholas Latin Fusion, we strive to bring the best of Latin American cuisine to the heart of the United States. Our chefs have years of experience in the culinary arts and have worked in some of the best restaurants in the world. We are proud to bring our unique flavors to the people of the United States and we hope you enjoy our food as much as we enjoy making it.</p>
+            <p>At Nicholas Latin Fusion, we proudly bring the vibrant flavors of Colombian and Peruvian cuisine to New York City. Our experienced chefs create authentic dishes using traditional techniques and high-quality ingredients. From arepas to ceviche, we invite you to savor our unique fusion of cultures right here in the heart of the city.</p>
         </div>
         <div class="about-box-2">
             <img src="assets/about-us-img.jpg" alt="Food Image">
             <!-- ADDED AN OVERLAY THAT CONTAINS TEXT AND A BUTTON THAT WILL BE DISPLAYED ON HOVER -->
             <div class="overlay">
                 <h3>CONTACT US</h3> 
-                <!-- HERE IM UTILIZING INLINE CSS -->
                 <a class="overlay-button" href="#contact" style="text-decoration: none;">Click Me</a>
             </div>
         </div>
@@ -56,26 +58,26 @@
     <!-- MEET OUR CHEFS -->
      <div class="box-container">
         <div class="box">
-            <div style="display: flex; flex-direction: column; align-items: center;">
+            <div class="hover-effect" style="display: flex; flex-direction: column; align-items: center;">
                 <img src="./assets/chef-persy.jpeg" class="chef-headshots" style="margin-bottom: 20px;"/>
                 <h2> Chef Persy</h2>
             </div>
         </div>
         <div class="box">
             <h2>Peruvian Chef</h2>
-            <p>Chef Jose Persy, hailing from Jaén, Peru, brings a deep-rooted passion for northern Peruvian cuisine, with a culinary style shaped by the Amazon’s flavors and traditions. Known for his mastery of regional dishes like juane, a savory blend of rice and chicken wrapped in jungle leaves, and tacacho con cuyi, a unique dish combining mashed plantains with roasted guinea pig, Chef Persy has dedicated his career to celebrating the authentic tastes of his homeland. His culinary excellence has earned him accolades throughout Peru, where he’s recognized for both preserving and elevating traditional flavors, making him a celebrated ambassador of Amazonian and highland Peruvian gastronomy.</p>
+            <p>Chef Jose Persy, from Jaén, Peru, has a deep passion for northern Peruvian cuisine, influenced by the Amazon’s rich flavors and traditions. He specializes in regional dishes like juane, a savory rice and chicken blend wrapped in jungle leaves, and tacacho con cuyi, mashed plantains served with roasted guinea pig. Celebrated for his culinary excellence, Chef Persy is recognized as an ambassador of Amazonian and highland Peruvian gastronomy, dedicated to preserving and elevating traditional flavors.</p>
         </div>
      </div>
     <div class="box-container">
         <div class="box">
-            <div style="display: flex; flex-direction: column; align-items: center;">
+            <div class="hover-effect" style="display: flex; flex-direction: column; align-items: center;">
                 <img src="./assets/chef-camilo.jpeg" class="chef-headshots" style="margin-bottom: 20px;"/>
                 <h2> Chef Camilo</h2>
             </div>
         </div>
         <div class="box">
             <h2>Colombian Chef</h2>
-            <p>Chef Juan Camilo, a native of Cali, Colombia, infuses his cooking with the vibrant flavors and cultural essence of his hometown. Renowned for his expertise in preparing traditional dishes like sancocho de gallina, a hearty chicken stew rich with local ingredients like plantains, yuca, and corn, Chef Juan also brings to life Cali’s iconic pandebono, a warm cheese bread beloved across Colombia. With a deep appreciation for the Afro-Colombian and indigenous influences that define Cali's cuisine, Chef Juan Camilo has become a culinary force, recognized for his dedication to preserving and sharing Colombia’s rich food heritage, with a special focus on the rhythms and flavors of his birthplace.</p>
+            <p>Chef Juan Camilo, from Cali, Colombia, infuses his cooking with the vibrant flavors of his hometown. He is renowned for traditional dishes like sancocho de gallina, a hearty chicken stew with local ingredients, and pandebono, a beloved cheese bread. With a deep appreciation for the Afro-Colombian and indigenous influences that shape Cali's cuisine, Chef Juan is recognized for his dedication to preserving and sharing Colombia’s rich food heritage.</p>
         </div>
     </div>
     <!-- LOCATION -->
@@ -85,23 +87,22 @@
         </iframe>
         <div class="box">
             <h2>Where To Find Us?</h2>
-            <p>At Nicholas Latin Fusion, we strive to bring the best of Latin American cuisine to the heart of the United States. Our chefs have years of experience in the culinary arts and have worked in some of the best restaurants in the world. We are proud to bring our unique flavors to the people of the United States and we hope you enjoy our food as much as we enjoy making it.</p>
+            <p>Located in the heart of where Colombia meets Peru, the cultural neighborhood of Jackson Heights. Get off the 7 train at 82nd Street, and you are only a 5-minute walk from our establishment. We chose to start our legacy here to fuse Colombian and Peruvian cuisine in the heart of Colombian and Peruvian culture.</p>
         </div>
     </div>
     <!-- CONTACT US (MAILTO) -->
     <div id="contact" class="box-container">
-        <div class="full-box" style="height: 20rem;">
+        <div class="full-box" style="height: 22rem;">
             <h2>Contact Us</h2>
-            <p>We're here to serve you fresh, delicious meals. For reservations, catering, or any inquiries, please reach out to us via email. We look forward to making your dining experience special!"</p>
+            <p>We're here to serve you fresh, delicious meals. For reservations, catering, or any inquiries, please reach out to us via email. We look forward to making your dining experience special!</p>
             <a href="mailto:NicholasLatinFusion@sgmail.com?subject=Customer Inquiry" class="hover-effect">E-Mail
             </a>
         </div>
 
     </div>
     <!-- BACK TO TOP -->
-     <div class="full-box hover-effect" id="back-to-top">
+     <div class="full-box hover-effect" id="back-to-top" style="height: 5rem; font-size: 2rem;">
         <a href="#top" class="back-to-top">Back to Top</a>
      </div>
-
 </body>
 </html>

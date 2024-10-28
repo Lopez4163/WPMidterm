@@ -4,15 +4,15 @@
     <title>Nicholas Latin Cuisine Taste Of Culture</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* ADJUSTING FLAG SIZES TO HAVE THEM TAKE UP HALF THE DIV VIA INTERNAL CSS */
         .flags {
-            width: 50%; /* Make the image take full width of the box */
-            height: 25rem; /* Keep the aspect ratio */
-            object-fit: cover; /* Cover the entire box while preserving aspect ratio */
+            width: 50%; 
+            height: 25rem; 
+            object-fit: cover; 
         }
         #flag-box {
            height: 20rem;
         }
-
         .cali-images {
             height: 30rem;
             width: 38rem;
@@ -21,18 +21,18 @@
 </head>
 <body>
     <!-- NAVRBAR CODE TO KEEP IT CONSISTENT -->
-    <div class="navbar-container navbar-font">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Nicholas Latin Fusion Logo"></a>
-            </div>
-            <div class="nav-links">
-                <a href="menu.html" class="hover-effect">Menu</a>
-                <a href="#location" class="hover-effect">Cultural Food</a>
-                <!-- CONTACT BUTTON WILL SEND YOU TO BOTTOM OF PAGE FOR CONTACT (MAILTO) SECTION -->
-                <a href="creative.html" class="hover-effect">Contact</a>
-            </div>
-        </div>
+    <div class="navbar-container navbar-font" id="top">
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">
+                    <img src="assets/logo5.png" class="hover-effect" style="height: 13rem; width: 13rem;" alt="Nicholas Latin Fusion Logo">
+                </a>
+            </li>
+            <li><a href="menu.html" class="hover-effect">Menu</a></li>
+            <li><a href="creative.html" class="hover-effect">Cultural Food</a></li>
+            <!-- CONTACT BUTTON WILL SEND YOU TO BOTTOM OF PAGE FOR CONTACT (MAILTO) SECTION -->
+            <li><a href="index.html#contact" class="hover-effect">Contact</a></li>
+        </ul>
     </div>
     <!-- WHERE MY FOOD COMES FROM -->
      <div class="box-container">
@@ -40,14 +40,19 @@
             <img class="flags" src="./assets/Flag-Peru.webp"/>
      </div>
      <div class="full-box" id="flag-box">
-        <h1>Experience The Taste Of Colombia And Peru</h1>
-        <p>At Nicholas Latin Fusion, we strive to bring the best of Latin American cuisine to the heart of the United States. Our chefs have years of experience in the culinary arts and have worked in some of the best restaurants in the world. We are proud to bring our unique flavors to the people of the United States and we hope you enjoy our food as much as we enjoy making it.</p>
+        <h1 style="font-family: 'Lobster', cursive;">Experience The Taste Of Colombia And Peru</h1>
+        <p style="margin-bottom: 15px;">
+            At Nicholas Latin Fusion, we blend the vibrant flavors of Colombian and Peruvian cuisine to create a unique dining experience. Drawing inspiration from our roots in two small cities, Jaén, Peru, and Cali, Colombia, we celebrate the rich culinary traditions of both cultures in every dish we serve.
+        </p>        
      </div>
+     <!-- COLOMBIA SECTION -->
      <div class="box-container">
-        <img src="./assets/cali-view.jpg" style="width: 50%; height: 35rem;"/>
+        <img src="./assets/cali-view.jpg" style="width: 50%; height: 40rem;" class="hover-effect"/>
         <div class="box">
             <h2>Cali, Colombia</h2>
-            <p>Cali, Colombia, known as the "Salsa Capital of the World," is a city where the rhythm of salsa music and dance is central to daily life and Colombian cultural identity. This lively heritage is matched by Cali’s unique cuisine, influenced by Afro-Colombian, indigenous, and Spanish traditions. Signature dishes like sancocho de gallina, a rich chicken stew with plantains, yuca, and corn, and pandebono, a beloved cheese bread, are staples that reflect the region’s agricultural bounty. Cali’s culinary and musical traditions together tell a story of a city that pulses with flavor and rhythm, deeply enriching Colombia's cultural landscape.</p>
+            <p class="hover-effect">
+                Cali, Colombia, known as the "Salsa Capital of the World," is where salsa music and dance are central to daily life and cultural identity. This lively heritage is reflected in Cali’s unique cuisine, influenced by Afro-Colombian, indigenous, and Spanish traditions. Signature dishes like sancocho de gallina, a rich chicken stew with plantains, yuca, and corn, and pandebono, a beloved cheese bread, showcase the region’s agricultural bounty. Together, Cali’s culinary and musical traditions tell the story of a city pulsing with flavor and rhythm, enriching Colombia's cultural landscape.
+            </p>            
         </div>
      </div>
      <div class="box-container">
@@ -55,17 +60,23 @@
         <img class="cali-images" src="./assets/sancocho.jpg"/>
         <img class="cali-images" src="./assets/pande-bono.jpg"/>
      </div>
+     <!-- PERU SECTION -->
      <div class="box-container">
         <div class="box">
             <h2>Jaen, Peru</h2>
-            <p>Jaén, Peru, is a vibrant town nestled in the northern Amazon region, known for its tropical climate and rich cultural heritage. The area is famous for its coffee and cacao production, yielding some of the finest beans in Peru due to its fertile soil and ideal growing conditions. Beyond agriculture, Jaén is deeply rooted in indigenous traditions, with local festivals and celebrations honoring its diverse heritage. The cuisine here reflects a blend of highland and Amazonian flavors, with popular dishes like juane, a flavorful rice and chicken dish wrapped in jungle leaves, and tacacho con cuyi, mashed plantains served with traditional roasted guinea pig. These culinary specialties showcase Jaén’s unique place within Peru’s cultural mosaic.</p>
+            <p class="hover-effect">
+                Jaén, Peru, is a vibrant town in the northern Amazon, known for its tropical climate and rich cultural heritage. Famous for producing some of the finest coffee and cacao beans, Jaén also honors its indigenous traditions through local festivals. The cuisine reflects a blend of highland and Amazonian flavors, featuring dishes like juane, a flavorful rice and chicken dish wrapped in jungle leaves, and tacacho con cuyi, mashed plantains served with roasted guinea pig. These specialties highlight Jaén’s unique place in Peru’s cultural mosaic.
+            </p>            
         </div>
-        <img src="./assets/jaen-view.jpg" style="width: 50%; height: 35rem;"/>
+        <img src="./assets/jaen-view.jpg" class="hover-effect" style="width: 50%; height: 40rem;"/>
      </div>
      <div class="box-container">
         <img class="cali-images" src="./assets/cacao .jpeg"/>
         <img class="cali-images" src="./assets/jaen-natives.jpeg"/>
         <img class="cali-images" style="width: 35rem;" src="./assets/Cuy.webp"/>
      </div>
+     <div class="full-box hover-effect" style="height: 2rem; font-size: 2rem; border: none;">
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </div>
 </body>
 </html>
